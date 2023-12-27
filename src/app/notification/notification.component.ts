@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-notification',
   standalone: true,
   imports: [],
-  template: `<div class="alert alert-success">
+  template: `<div class="alert alert-success " [hidden]="!displayNotification">
     <p>This website uses cookies to provide a better user experience</p></div>`,
   styles: [`.notification-div {margin: 10px 0px; padding: 10px 20px; background-color: #fad7a0; text-align: center}`, 
   `p {font-size: 16px}`
 ]
 })
 export class NotificationComponent {
-
+  displayNotification: boolean = true
 }

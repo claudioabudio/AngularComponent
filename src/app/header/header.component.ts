@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
     slogan : string = 'Your one stop shop for everything';
+    imgSource : string = '/assets/shopping.jpg';
 }
